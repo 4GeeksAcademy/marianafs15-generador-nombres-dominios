@@ -1,30 +1,30 @@
 /* eslint-disable */
 import "bootstrap";
 import "./style.css";
-
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function () {
-  let pronombre = ["the", "our"];
-  let adj = ["great", "big"];
-  let nombre = ["jogger", "racoon"];
-  let extensiones = [".com", ".net"];
-  let myList = document.querySelector("#lista");
-  let listaNombresDominios = "";
 
-  for (let i = 0; i < pronombre.length; i++) {
-    for (const iterator of adj) {
-      for (const iterator2 of nombre) {
-        for (const iterator3 of extensiones) {
-          let dominio = pronombre[i] + iterator + iterator2 + iterator3;
-          console.log(dominio);
-          listaNombresDominios += `<li>${dominio}</li>`;
+window.onload = function () {
+  let pronoum = ["the", "our"];
+  let adjetive = ["great", "big"];
+  let name = ["jogger", "racoon"];
+  let extension = [".com", ".net"];
+  let myList = document.querySelector("#lista");
+  let domainNameList = "";
+
+  for (let i = 0; i < pronoum.length; i++) {
+    for (const iterator of adjetive) {
+      for (const iterator2 of name) {
+        for (const iterator3 of extension) {
+          let domain = pronoum[i] + iterator + iterator2 + iterator3;
+          console.log(domain);
+          domainNameList += `<li>${domain}</li>`;
         }
       }
     }
   }
 
-  myList.innerHTML = listaNombresDominios;
+  myList.innerHTML = domainNameList;
 };
 
